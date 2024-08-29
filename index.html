@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Container for the whole layout -->
+    <div class="container">
+        <!-- Top Section with Background Image -->
+        <div class="top-section">
+        </div>
+
+<div class="links-section">
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        &#9776; <!-- Unicode for hamburger icon -->
+    </div>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="resume/index.html">Resume</a>
+        <a href="jresume/index.html">履歴書</a>
+        <a href="techstack/index.html">Tech Stack</a>
+        <a href="contact/index.html">Contact</a>
+    </div>
+</div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Column -->
+            <div class="column-left">
+                <h1>Welcome to My Portfolio</h1>
+				<p>I am Chris, a seasoned leader with over 20 years of technical experience and a decade of management expertise, specializing in customer-facing roles. My career has been dedicated to driving innovation, optimizing processes, and leading global teams to achieve exceptional results. Currently, I manage an international IT team across APAC, ensuring seamless operations and high customer satisfaction.</p?
+<p>
+I hold an MBA with a major in Analytics and a robust technical foundation with a Master’s and Bachelor’s in IT. My certifications in ITIL 4, CompTIA Network+, and AWS Cloud Practitioner further solidify my technical acumen.</p>
+<p>
+My journey has taken me across the globe, from leading high-performing teams in Japan to delivering complex system integrations in the USA. I thrive in dynamic, fast-paced environments where I can leverage my skills in leadership, analytics, and innovation to drive strategic growth.
+</p>
+<p>
+In this portfolio, you’ll find detailed insights into my professional experience, technical competencies, and the projects that have defined my career. Whether you're here to explore my work, learn more about my background, or connect for potential collaboration, I hope you find this site informative and engaging.</p>
+</p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column-right">
+                <img src="img/me.png" alt="Description of the image" class="picture"> 
+                <h2>Languages</h2>
+ <ul>
+    <li><strong>English:</strong> Native</li>
+    <li><strong>Japanese:</strong> JLPT N2</li>
+    <li><strong>Croatian:</strong> I can order at a restaurant</li>
+    <li><strong>Korean:</strong> I can order at a restaurant</li>
+    <li><strong>Spanish:</strong> I can order at a restaurant</li>
+					</ul>
+<h2>Hobbies</h2>
+<ul>
+    <li>Weight lifting</li>
+    <li>Reading</li>
+    <li>Family</li>
+    <li>Travel</li>
+</ul>
+
+<h2>Travel</h2>
+<ul>
+    <li>24 Countries</li>
+	<li>21 US States</li>
+<li>28 Japanese Prefectures</h2>
+    </div>
+	    <!-- Include JavaScript at the end of the body -->
+    <script>
+        function toggleMenu() {
+            var links = document.querySelector('.links');
+            links.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

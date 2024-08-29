@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FBF9F4; /* Relaxing background color */
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; /* Padding above and below the container */
+}
+
+/* Container for the whole layout */
+.container {
+    width: 70%; /* 70% of the page width */
+    border: 2px solid black; /* Border around the entire container */
+    box-sizing: border-box; /* Ensures padding and border are included in width/height */
+}
+
+/* Top Part with Background Image */
+.top-section {
+    background-image: url('../img/background.webp'); /* Replace with the correct image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+/* Hamburger Menu Style */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Links */
+.links {
+    display: flex;
+    padding: 0 20px; /* No padding at the top and bottom */
+    align-items: center;
+    padding-left: 40px;
+    border-bottom: 2px solid black;
+	
+}
+
+/* Hide links by default on small screens */
+.links a {
+	
+    padding-right: 3em;
+    color: #A80000;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px rgba(51, 51, 51, 0.5);
+}
+
+.links a:hover {
+    color: #CC0000;
+}
+
+/* Two Column Layout */
+.main-content {
+    display: flex;
+    padding: 0 20px; /* No padding at the top and bottom */
+}
+
+.column-left {
+    width: 80%; 
+    padding: 20px;
+    border-right: 2px solid black;
+    border-bottom: none; /* Ensure the vertical line touches the horizontal lines */
+}
+
+.column-right {
+    padding: 10px;
+}
+
+/* Content Styling */
+h1, h2, h3, h4, h5 {
+    color: #333;
+    margin-top: 10px; /* Adjust the top margin to reduce space above the heading */
+    margin-bottom: 10px; /* Adjust the bottom margin to reduce space below the heading */
+}
+
+
+h2, h3, h4 {
+    margin-top: 0px; /* Adjust the top margin to reduce space above the heading */
+    margin-bottom: 0px; /* Adjust the bottom margin to reduce space below the heading */
+}
+
+h4 {
+	font-style: italic;
+	}
+
+h5 {
+	margin-top: 5px; /* Adjust the top margin to reduce space above the heading */
+    margin-bottom: 5px; /* Adjust the bottom margin to reduce space below the heading */
+}
+p {
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-left: 10px;
+    list-style-type: disc;
+}
+
+.picture {
+    width: 100%;
+	height:auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+
+    .column-left, .column-right {
+        width: 100%;
+        border-right: none;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .links a {
+        padding-right: 2em;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        border: none;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    .links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+    }
+
+    .links a {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .column-left, .column-right {
+        padding: 10px;
+    }
+
+    .top-section {
+        height: 200px;
+    }
+
+    .links.show {
+        display: flex; /* Show links when the menu is toggled */
+    }
+}
