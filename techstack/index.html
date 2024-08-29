@@ -29,16 +29,34 @@
         <div class="main-content">
             <!-- Left Column -->
             <div class="column-left">
-                <h1>Contact Me</h1>
-                <p>If you would like to get in touch, feel free to send me an email at:</p>
-                <h2><a href="mailto:Mr.ChrisLister@gmail.com">Mr.ChrisLister@Gmail.com</a></h2>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Don't hesitate to reach out!</p>
-                <p>Thank you for visiting my portfolio. I look forward to hearing from you soon.</p>
+                <h1>Tech Stack Summary</h1>
+				<h2>Diagram Overview</h2>
+                <p>The tech stack diagram on the right visually represents the workflow of how I created my website and the various technologies involved in delivering the content. By choosing AWS Cloud, I leveraged its scalable and reliable infrastructure to ensure optimal performance and availability for my website.</p>
+                <h2>Workflow Description</h2>
+<ol>
+				<li><strong>User Interaction</strong><br />The process starts with the user accessing the website.</li><br />
+				<li><strong>Device and Browser</strong><br />The user interacts with the website through a Computer, which uses a Website Browser to request content.</li><br />
+				<li><strong>Domain Resolution - Route 53</strong><br />For domain resolution, I use AWS Route 53. Route 53 handles DNS resolution, directing the request to the appropriate content delivery network (CDN).</li><br />
+				<li><strong>Content Delivery - CloudFront</strong><br />I set up CloudFront to act as the CDN, caching and serving content. It optimizes content delivery and forwards requests to the backend server when necessary.</li><br />
+				<li><strong>Web Server - Amazon Linux EC2</strong><br />The request is ultimately served by the Amazon Linux EC2 Web Server, which runs the Apache web server. I use it to process the HTML, CSS, and JavaScript and deliver the web page to the browser. To keep within the AWS free tier, I chose a specific EC2 server that met the requirement.</li>
+				</ol><p />
+                <h2>Technologies Used</h2>
+				<ul>
+					<li><strong>Route 53</strong><br />I chose AWS's Route 53 for domain name resolution, directing user requests to the correct resources.</li><br />
+					<li><strong>CloudFront</strong><br />AWS's CloudFront CDN was selected to cache and deliver content quickly, reducing latency and improving load times.</li><br />
+					<li><strong>Amazon Linux EC2</strong><br />For the web server, I utilized a free-tier version of Amazon Linux EC2 to stay within budget.</li><br />
+					<li><strong>Apache Web Server</strong><br />To handle HTTP requests and serve web pages, I chose Apache Web Server for its reliability and extensive community support.</li><br />
+					<li><strong>HTML</strong><br />I used HTML to structure the web content and provide the basic framework of the pages.</li><br />
+					<li><strong>CSS</strong><br />I applied CSS to create the visual design and layout of the website.</li><br />
+					<li><strong>JavaScript</strong><br />I included JavaScript to add interactivity and enhance the user experience on the web pages.</li><br />
+					<li><strong>Mermaid</strong><br />This tool was used to create diagrams and visualizations in code. The diagram on the right, showing the tech stack flow, was made using Mermaid Markdown.</li><br />
+					<li><strong>Git</strong><br />I used Git for version control to track changes in my codebase, manage updates, and collaborate on development.</li><br />
+				</ul>
             </div>
 
             <!-- Right Column -->
-            <div class="column-right">
-                <img src="../img/contact.webp" alt="Contact Image" class="picture">
+            <div class="svg-box">
+                <img src="../img/diagram.svg" alt="Contact Image" class="svg">
             </div>
         </div>
     </div>
