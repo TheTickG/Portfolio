@@ -70,6 +70,13 @@ body {
     border-bottom: none; /* Ensure the vertical line touches the horizontal lines */
 }
 
+.column-left2 {
+    width: 65%; 
+    padding: 20px;
+    border-right: 2px solid black;
+    border-bottom: none; /* Ensure the vertical line touches the horizontal lines */
+}
+
 .svg-box {
 		align-items: flex-start; 
 }
