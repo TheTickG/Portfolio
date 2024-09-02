@@ -82,8 +82,7 @@ body {
 
 .column-right {
     width: 30%; 
-	padding-top:10px;
-    padding: 0 20px; /* No padding at the top and bottom */}
+    padding: 20px; /* No padding at the top and bottom */}
 
 .column-left2 {
     width: 65%; 
