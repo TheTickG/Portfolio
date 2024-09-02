@@ -63,12 +63,27 @@ body {
     padding: 0 20px; /* No padding at the top and bottom */
 }
 
+.main-content2 {
+    display: flex;
+}
+
 .column-left {
     width: 80%; 
     padding: 20px;
     border-right: 2px solid black;
     border-bottom: none; /* Ensure the vertical line touches the horizontal lines */
 }
+
+.column-left3 {
+    width: 70%; 
+    border-right: 2px solid black;
+    border-bottom: none; /* Ensure the vertical line touches the horizontal lines */
+}
+
+.column-right {
+    width: 30%; 
+	
+    padding: 0 20px; /* No padding at the top and bottom */}
 
 .column-left2 {
     width: 65%; 
@@ -118,6 +133,11 @@ ul {
 .picture {
     width: 100%;
 	height:auto;
+}
+
+.picture2 {
+    width: 100%;
+	height: 100%;
 }
 
 /* Responsive Design */
