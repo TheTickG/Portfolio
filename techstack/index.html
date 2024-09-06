@@ -39,7 +39,8 @@
 				<li><strong>Device and Browser</strong><br />The user interacts with the website through a Computer, which uses a Website Browser to request content.</li><br />
 				<li><strong>Domain Resolution - Route 53</strong><br />For domain resolution, I use AWS Route 53. Route 53 handles DNS resolution, directing the request to the appropriate content delivery network (CDN).</li><br />
 				<li><strong>Content Delivery - CloudFront</strong><br />I set up CloudFront to act as the CDN, caching and serving content. It optimizes content delivery and forwards requests to the backend server when necessary.</li><br />
-				<li><strong>Web Server - Amazon Linux EC2</strong><br />The request is ultimately served by the Amazon Linux EC2 Web Server, which runs the Apache web server. I use it to process the HTML, CSS, and JavaScript and deliver the web page to the browser. To keep within the AWS free tier, I chose a specific EC2 server that met the requirement.</li>
+				<li><strong>Web Server - Amazon Linux EC2</strong><br />The request is ultimately served by the Amazon Linux EC2 Web Server, which runs the Apache web server. I use it to process the HTML, CSS, and JavaScript and deliver the web page to the browser. To keep within the AWS free tier, I chose a specific EC2 server that met the requirement.</li><br />
+				<li><strong>Monitoring and Logging - Datadog Integration</strong><br />I have integrated Datadog to enhance the monitoring and logging of my AWS resources. Datadog pulls logs and metrics directly from Amazon CloudWatch for my EC2 instance, allowing for real-time performance monitoring. This setup allows me to stay proactive in detecting potential performance issues and optimizing the site’s availability.</li>
 				</ol><p />
                 <h2>Technologies Used</h2>
 				<ul>
@@ -47,6 +48,7 @@
 					<li><strong>CloudFront</strong><br />AWS's CloudFront CDN was selected to cache and deliver content quickly, reducing latency and improving load times.</li><br />
 					<li><strong>Amazon Linux EC2</strong><br />For the web server, I utilized a free-tier version of Amazon Linux EC2 to stay within budget.</li><br />
 					<li><strong>Apache Web Server</strong><br />To handle HTTP requests and serve web pages, I chose Apache Web Server for its reliability and extensive community support.</li><br />
+					<li><strong>Datadog</strong><br />I use Datadog to monitor my EC2 instance performance, with logs pulled from CloudWatch. This monitoring setup gives me comprehensive visibility into my website’s infrastructure and traffic.</li><br />
 					<li><strong>HTML</strong><br />I used HTML to structure the web content and provide the basic framework of the pages.</li><br />
 					<li><strong>CSS</strong><br />I applied CSS to create the visual design and layout of the website.</li><br />
 					<li><strong>JavaScript</strong><br />I included JavaScript to add interactivity and enhance the user experience on the web pages.</li><br />
@@ -57,7 +59,7 @@
 
             <!-- Right Column -->
             <div class="svg-box">
-                <img src="../img/diagram2.svg" alt="Contact Image" class="svg">
+                <img src="../img/diagram3.svg" alt="Contact Image" class="svg">
             </div>
         </div>
     </div>
